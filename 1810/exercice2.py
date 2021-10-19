@@ -9,7 +9,7 @@ print()
 def calculate_sum_first_numbers(n) :
     sum = 0
 
-    for i in range(1, n+1) :
+    for i in range(0, n+1) :
         sum += i
         # décommenter pour voir le cheminement
         # print("i : " + str(i))

@@ -42,9 +42,8 @@ def return_max_element_from_list(list) :
 
     return max_element
 
-print("Maximum de la liste d'Integers : " + str(return_max_element_from_list(int_list)))
+print("Maximum de la liste d'Integers : " + str(return_max_element_from_list(another_another_list)))
 print()
-
 
 # 3.1.4
 def return_elements_dictionary_from_list(list) :
@@ -109,11 +108,12 @@ def return_list_elements_states_pos_zero(list) :
 
     # J'avais une erreur Index out of Range en utilisant juste
     # for i in list :
-    for i in range(0, len(list)) :
-        if list[i] > 0 :
-            elements_states_list.append(list[i])
-        elif list[i] == 0 :
-            elements_states_list.append(list[i])
+    for i in list :
+        zero = 0
+
+        if list[zero] >= 0 :
+            elements_states_list.append(i)
+            zero += 1
 
     return elements_states_list
 
@@ -134,6 +134,6 @@ def return_if_list_ascending(list) :
 
     return list_state
 
-print("La liste " + str(return_if_list_ascending(int_list)))
+print("La liste " + str(return_if_list_ascending(another_another_list)))
 print()
 
