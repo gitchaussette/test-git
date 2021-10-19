@@ -11,18 +11,36 @@ dictionary = defaultdict(list)
 
 print()
 
-def separate_strings_from_ints(list) :
+# def separate_strings_from_ints(list) :
 
-    for i in list :
-        dictionary[type(i)].append(i)
-        print(dictionary)
+#     for i in list :
+#         dictionary[type(i)].append(i)
+#         print(dictionary)
 
-    print(dictionary[int])
-    print(dictionary[str])
-    print(dictionary[float])
+#     print(dictionary[int])
+#     print(dictionary[str])
+#     print(dictionary[float])
 
+stock_str = []
+stock_int = []
 
-separate_strings_from_ints(stock)
+for x in stock :
+    print(type(x))
+    print(type(str(x)))
+
+    if type(x) == type(str(x)) :
+        stock_str.append(x)
+    
+    # elif type(x) == type(int(x)) :
+    #     stock_int.append(x)
+
+    else :
+        stock_int.append(x)
+
+print(stock_str)
+print(stock_int)
+
+# separate_strings_from_ints(stock)
 
 print()
 
